@@ -1,0 +1,28 @@
+.skeleton{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size:
+        50px 100%, /* highlight */
+        100% 100%;
+    background-position:
+        0 0, /* highlight */
+        100% 0;
+    animation: loading 1.5s infinite;
+}
+.skeleton[light] {
+    background-image:
+        linear-gradient( 100deg, rgba(200, 200, 200, 0), rgba(200, 200, 200, 0.5) 50%, rgba(200, 200, 200, 0) 80% ),
+        linear-gradient(white 100%, transparent 0);
+}
+.skeleton[dark]{
+    background-image:
+        linear-gradient( 100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80% ),
+        linear-gradient(#eee 100%, transparent 0);
+}
+@keyframes loading {
+  to {
+    background-position:
+        100% 0, /* move highlight to right */
+        100% 0;
+  }
+}
