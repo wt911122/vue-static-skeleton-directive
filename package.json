@@ -34,7 +34,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-spec-reporter": "0.0.32",
     "karma-webpack": "^4.0.2",
-    "mocha": "^7.1.0",
+    "mocha": "^10.2.0",
     "vue": "^2.6.11",
     "vue-loader": "^15.9.0",
     "vue-template-compiler": "^2.6.11",
